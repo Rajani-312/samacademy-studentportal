@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="{% static 'pg1.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+
+</head>
+<body>
+    <div class="navbar">   
+        <img src="{%static 'images/logo.png'%}" style="border-radius: 20px;width: 100px;background-color: aliceblue;
+        margin: 15px;" alt="WE ARE IPCS"  >
+        <ul>
+            <!-- Coursepage.html -->
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'course' %}" class="active2">Course</a></li>
+            <li><a href="{% url 'result' %}">Result</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </div>
+    <div class="content-course">
+        <h2 style="text-align: center;display: block; color: aliceblue ; background-color: brown;">Courses </h2>
+        <div class="container" id="course">
+            <div class="column">
+                <!-- Content for column 1 -->
+                <h2>Automation</h2>
+                <p>"Explore the transformative power of automation through our specialized courses. 
+                    From streamlined processes to increased productivity, unlock the potential of cutting-edge technologies."
+                </p>
+                <button><a class="knw" href="{% url 'Automation' %}" >Know more...</a></button>    
+            </div>
+
+            <div class="column">
+                <!-- Content for column 2 --> 
+                <h2>PLC</h2>
+                <p>"Master the language of machines with our PLC courses, where precision meets innovation. 
+                    Unlock the world of Automation, and reshape industries through cutting-edge technology."</p>
+                <button><a  class="knw" href="{% url 'PLC' %}">Know more...</a></button>
+            </div>
+
+            <div class="column">
+                <!-- Content for column 3 -->
+                <h2>Embedded & IOT</h2>
+                <p>"Dive into the realm of Embedded Systems & IoT with our expert-led courses. 
+                    From code connectivity, explore the limitless possibilities of smart devices and solutions."
+                </p>
+                <button><a class="knw" href="{% url 'Embedded' %}">Know more...</a></button>
+            </div>
+
+            <div class="column">
+                <!-- Content for column 4 -->
+                <h2>Digital Marketing</h2>
+                <p>"Accelerate your online presence with strategic digital marketing solutions. 
+                    From SEO to social media, we amplify your brand and engagement in the digital landscape."
+                </p>
+                <button><a  class="knw" href="{% url 'DM' %}">Know more...</a></button>
+            </div>
+
+        </div>
+        <div class="container" id="course">
+            <div class="column">
+                <!-- Content for column 1 -->
+                <h2>Python Full Stack</h2>
+                <p>"Become a Python Full Stack Developer — from server-side scripting to dynamic front-end interfaces, and more data processing.
+                    Master the art of Python Full Stack Development, seamlessly blending backend and frontend technologies. "
+                </p>
+                <button><a class="knw" href="{% url 'python' %}">Know more...</a></button>
+            </div>
+
+            <div class="column">
+                <!-- Content for column 2 -->
+                <h2>Data Science</h2>
+                <p>"Delve into the realm of Data Science & Artificial Intelligence, unravel insights from data and machines to learn, innovate, and transform  future.
+                Embark on journey at intersection, where analytics meets intelligence, driving innovation."
+                </p>
+                <button><a class="knw" href="{% url 'DS_AI' %}">Know more...</a></button>
+            </div>
+
+            <div class="column">
+                <!-- Content for column 3 -->
+                <h2>Java Full Stack</h2>
+                <p>"Craft dynamic scalable applications to shape the coding and              
+                    power of Java across the development from serverside logic to interactive user interfaces. 
+                    Become a versatile Full Stack Developer and bring your coding vision to life."
+                </p>
+                <button><a  class="knw" href="{% url 'JavaFS' %}">Know more...</a></button>
+            </div>
+
+            <div class="column">
+                <!-- Content for column 4 -->
+                <h2>Autocad, SolidWorks</h2>
+                <p>"Master precision design with AutoCAD, the industry software for 2D and 3D drafting.
+                    Elevate your engineering with SolidWorks, bringing innovative designs to life in 3D."
+                </p>
+                <button><a  class="knw" href="{% url 'Autocad' %}">Know more...</a></button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

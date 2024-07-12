@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded</title>
+    <link rel="stylesheet" href="pg1.css">
+    <style>
+        body{
+            border: double rgb(36, 36, 56) 5px;
+            margin: 20px 100px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>EMBEDDED & IOT</h2>
+    <hr>
+    <div class="container2">
+        <div class="text">
+            <p>
+                "Embark on a journey into the heart of technology with our Embedded Systems courses. 
+                Explore the intricate world of hardware and software integration, learning to design 
+                intelligent systems that power everything from IoT devices to mission-critical machinery. 
+                Gain the expertise to shape the future of connected technologies."
+            </p>
+        </div>
+        
+        <div class="image">
+            <img src="{%static 'images/embedded.jpg'%}" alt="Your Image Description">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="image">
+            <img src="{static 'images/embedded2.jpg'%}" alt="Your Image Description">
+        </div>
+        <div class="text">
+            <p>
+                "Discover the power beneath the surface with our Embedded Systems courses. 
+                From microcontrollers to real-time operating systems, delve into the essentials of building smart, 
+                responsive devices. Our hands-on training equips you with the 
+                skills to innovate in the dynamic field of embedded technology, bridging the gap between 
+                the physical and digital worlds."
+            </p>
+</body>
+</html>

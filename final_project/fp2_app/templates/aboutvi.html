@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="{% static 'pg1.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+
+</head>
+<body>
+    <div class="navbar">   
+        <img src="{%static 'images/logo.png'%}" style="border-radius: 20px;width: 100px;background-color: aliceblue;
+        margin: 15px;" alt="WE ARE IPCS"  >
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'course' %}">Course</a></li>
+            <li><a href="{% url 'result' %}">Result</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'about' %}" class="active2">About</a></li>
+        </ul>
+    </div>
+    <div id="about">
+        
+        <section id="about-us">
+            <div class="container-about">
+                <h2>About SAM academy</h2>
+                
+                <div class="overview">
+                    <p>Welcome to SAM academy, where we pioneer education in technology and innovation. 
+                        Our academy is a hub for aspiring individuals, providing an immersive learning experience 
+                        in cutting-edge fields such as AutoCAD, Automation, Python, and Data Science & AI.
+                    </p>
+                    <p>
+                        Here education transcends boundaries and innovation is cultivated. 
+                        Our academy stands as a beacon of excellence, boasting a team of seasoned educators 
+                        whose wealth of experience forms the bedrock of our commitment to quality learning. 
+                        With a faculty composed of industry veterans and subject matter experts, 
+                        we offer a dynamic educational journey, ensuring that every student is guided by mentors 
+                        with a profound understanding of the field.
+                    </p>
+                    <p>
+                        Beyond the classroom, our commitment to student success extends to forging impactful 
+                        partnerships with industry leaders, creating avenues for high placements and 
+                        unparalleled career prospects. We take pride in our extensive network and 
+                        collaborations that open doors to internships, projects, and real-world applications, 
+                        giving our students a competitive edge in the job market.
+                    </p>
+                    <p>
+                        Step into our campus, and you'll find more than just classrooms; you'll discover a
+                        thriving ecosystem designed for optimal learning. Our commitment to a positive and
+                        inclusive atmosphere ensures that every student feels inspired and supported, 
+                        fostering a culture of collaboration and growth.
+                    </p>
+                    <p>
+                        At SAM Academy, we believe in nurturing not just skilled professionals but 
+                        well-rounded individuals poised for success. Join us on this transformative journey where
+                         experienced teachers, high placements, strategic tie-ups, 
+                        and a vibrant atmosphere converge to shape your future in technology."
+                    </p>
+                </div>
+
+                <div class="mission-vision">
+                    <h3>Our Mission</h3>
+                    <p>At our academy, our mission is to empower individuals with the knowledge and skills needed to thrive in the ever-evolving landscape of technology. We are dedicated to fostering a community of lifelong learners and innovators.</p>
+
+                    <h3>Our Vision</h3>
+                    <p>We envision SAM academy as a catalyst for technological advancements, where individuals unleash their potential to shape the future. Our vision is to be a global leader in providing quality education and fostering innovation.</p>
+                </div>
+
+                <div class="core-values">
+                    <h3>Our Core Values</h3>
+                    <ul>
+                        <li>Excellence</li>
+                        <li>Innovation</li>
+                        <li>Inclusivity</li>
+                        <li>Continuous Learning</li>
+                        <!-- Add more values as needed -->
+                    </ul>
+                </div>
+
+                <div class="team">
+                    <h3>Meet the Team</h3>
+                    <!-- Introduce founder/leadership and instructors -->
+                    <p>Founded by Rajam, SAM Academy is led by a team of dedicated professionals with extensive experience in the tech industry. Our instructors bring a wealth of knowledge and expertise to the classroom.</p>
+                </div>
+
+                <!-- Include additional sections as needed, such as achievements, success stories, learning environment, etc. -->
+
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

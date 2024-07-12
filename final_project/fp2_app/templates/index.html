@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pg1.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+    
+</head>
+<body>
+    <div class="navbar">   
+        <img src="{%static 'images/logo.png'%}" style="border-radius: 20px;width: 100px;background-color: aliceblue;
+        margin: 15px;" alt="WE ARE IPCS"  >
+        <ul>
+            
+            <li><a href="{% url 'index' %}" class="active2">Home</a></li>
+            <li><a href="http://127.0.0.1:8000/course/">Course</a></li>
+            <li><a href="{% url 'result' %}">Result</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="content" id="Home">
+        <section class="hero-section" style="background-image: url({%static 'images/home-bg1.jpg'%});
+        background-repeat : no-repeat;width: 1000px;">
+            <h1>Welcome to SAM Academy</h1>
+            <p>Unlock the power of mordern technologies like automation, embedded, PLC and many more Engineering Tech  ; Python, java, javascript, HTML, CSS, Data science and digital marketing with our expert-led courses.</p>
+            <a href="{% url 'registration' %}" class="cta-button">Register Now !!!</a>
+            <marquee> You are just one click away from the best team in the market. See you soon…..!! </marquee>
+        </section>
+        
+        <p class="para2">
+            Explore technological excellence at our academy, a hub where you can learn, discover, and thrive. 
+            Uncover the secrets of precision design with AutoCAD, delve into automation for efficient processes, 
+            embrace the power of Python for coding versatility, and unlock the mysteries of Data Science & 
+            AI for data-driven decision-making. Dynamic courses are designed to equip you with the skills 
+            demanded by the ever-evolving tech landscape. Whether you're a beginner or an experienced professional, 
+            our academy is your gateway to mastering the technologies that shape the digital future.
+        </p>
+        
+        <p class="para2">
+            Experience a transformative journey at our academy, where innovation meets expertise. 
+            Dive into cutting-edge technologies like AutoCAD for precision design, Automation for 
+            streamlined processes, Python for versatile programming, and Data Science & AI for intelligent insights. 
+            Expert-led courses blend theory with hands-on practice, empowering you to shape 
+            the future of technology with confidence. Master the tools driving industries forward 
+            and elevate your skills at the intersection of creativity and innovation.
+        </p>
+        <br> 
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="{%static 'images/home1.jpg'%}" alt="Image 1">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="{%static 'images/home2.jpg'%}" alt="Image 2">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="{%static 'images/home3.jpg'%}" alt="Image 3">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span>  
+            <span class="dot"></span> 
+        </div>
+
+        <br>
+        <p class="para1">
+            IPCS started as an Automation Service provider in 2008 and has grown beyond even our loftiest expectations. Along with our growth, our dreams also grew. 
+            We aspire to be the one-stop technological solution for all job aspirants as well as recruiters. What makes IPCS different is just a one-word reply: ‘Improvisation.’ <br><br><br>
+            We at IPCS, make sure that we are changing with time, from matters of Technical Training to Sales or from Team Management to Student Support. 
+            Our curriculum and training methods keep getting updated every year to match the latest trends in the market, thus making our candidates the most suitable ones. <br><br><br>
+            The dream of Team IPCS is to eradicate the technical skill gap, making a world where all job aspirants can reach the top with our support. Our Practical Training and On Project Training methodologies ensure that all our students reach their maximum potential.
+            If you are here to make a change in your technological career, company, or even life, there’s no need to look any further. IPCS Global assures Practical and Industry-Oriented Training from Top Technical Experts, along with Real-time Projects and Top Placement Assistance.<br><br><br>
+        </p>
+        
+        <div class="container2">
+            <div class="text">
+                <p>
+                    "Embark on a transformative learning journey with our diverse array of software courses, designed to equip you with the skills and knowledge needed in today's dynamic tech landscape.
+                    Discover the art of Digital Marketing, where strategies to enhance online presence and drive business success take center stage. 
+                    Dive into the versatile world of Python programming, unraveling its simplicity and power to bring your coding ideas to life.
+                </p>
+            </div>
+            
+            <div class="image">
+                <img src="{%static 'images/DM-home.jpg'%}" alt="Your Image Description">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="text">
+                <p>
+                    Our comprehensive courses blend theoretical foundations with hands-on practicality, ensuring you gain a holistic understanding of each subject. 
+                    Whether you're a beginner or looking to level up your skills, our expert-led courses provide a roadmap for success in the rapidly evolving software landscape. 
+                    Join us on this educational adventure, where innovation meets expertise, and shape your future in the digital realm."
+                </p>
+            </div>
+            
+            <div class="image">
+                <img src="{%static 'images/tech-home.jpg'%}" alt="Your Image Description">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="text">
+                <p>
+                    Explore the realms of Artificial Intelligence and Machine Learning, where cutting-edge technologies converge to revolutionize how machines think and learn. 
+                    From crafting intelligent algorithms to predictive analytics, these courses open doors to the future of smart technology. 
+                    Elevate your creative prowess with Photoshop courses, mastering the art of digital design and visual storytelling.
+                </p>
+            </div>
+            
+            <div class="image">
+                <img src="{%static 'images/ai-home.jpg'%}" alt="Your Image Description">
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <footer>
+        <!-- Your footer content, links, and copyright information -->
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>
